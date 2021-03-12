@@ -20,9 +20,19 @@ function passwordVerifier(password) {
                 numberCounter++
             }
         }
+        for(let j = 0 ; j < uppercase.length; j++) {
+            if(password[i] == uppercase[j]){
+                uppercaseCounter++
+            }
+        }
+        for(let j = 0 ; j < lowercase.length; j++) {
+            if(password[i] == lowercase[j]){
+                lowercaseCounter++
+            }
+        }
     }
 
-    console.log(numberCounter);
+    console.log(lowercaseCounter);
 }
 
-passwordVerifier('njsldak584ew9ion@!j')
+passwordVerifier('njsSSADGFldakgR584ew9ion@!j')
